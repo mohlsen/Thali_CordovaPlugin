@@ -20,17 +20,17 @@
 
 'use strict';
 
-var tape = require('tape');
+var test = require('tape-catch')
 var WrappingTape = require('wrapping-tape');
 var CoordinatorConnector = require('./CoordinatorConnector');
 var parsedJSON = require('../serveraddress.json');
 
 process.on('uncaughtException', function(err) {
-  console.log("We have an uncaught exception, good bye: " + JSON.stringify(err));
+  console.trace("We have an uncaught exception, good bye: " + JSON.stringify(err));
 });
 
 process.on('unhandledRejection', function(err) {
-  console.log("We have an uncaught promise rejection, good bye: " + JSON.stringify(err));
+  console.trace("We have an uncaught promise rejection, good bye: " + JSON.stringify(err));
 });
 
 function Thali_Tape(options) {
