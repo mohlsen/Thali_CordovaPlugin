@@ -37,7 +37,8 @@
     "tape-catch": "^1.0.4",
     "thali": "^2.0.1",
     "uuid": "^2.0.0",
-    "wrapping-tape": "^0.0.3"
+    "wrapping-tape": "^0.0.3",
+    "node-ssdp": "^2.6.3"
   },
   "devDependencies": {}
 }
