@@ -16,7 +16,7 @@ var test = tape({
   }
 });
 
-test('#passing wrong test name should emit done', function (t) {
+test('passing wrong test name should emit done', function (t) {
   var perfTestFrameworkClient = new PerfTestFrameworkClient('Some device name');
   perfTestFrameworkClient.on('done', function (result) {
     t.ok(result, 'received a result to the done event');

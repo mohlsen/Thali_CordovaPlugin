@@ -13,7 +13,7 @@ var test = tape({
   }
 });
 
-test('#should be able to add devices to the framework', function (t) {
+test('should be able to add devices to the framework', function (t) {
   var perfTestFramework = new PerfTestFramework('iOS', 2, true, 1000);
   var testDevice = new TestDevice(null, 'Some device name');
   perfTestFramework.addDevice(testDevice);

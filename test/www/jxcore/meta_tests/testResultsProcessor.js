@@ -12,7 +12,7 @@ var test = tape({
   }
 });
 
-test('#should be able to process valid results without exceptions', function (t) {
+test('should be able to process valid results without exceptions', function (t) {
   var testResults = [
     {
         'data': {
